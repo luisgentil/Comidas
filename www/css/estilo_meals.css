@@ -70,7 +70,7 @@ div:hover {
     text-align: center;
     width: 95%;
     height: 25%;
-    background-color: yellowgreen;
+    background-color: #ffba00;
     padding: 5px 2px;
     border: 1px;
     color: white;
@@ -80,7 +80,8 @@ div:hover {
 
 .botones:hover {
     background-color:rgba(254, 166, 17, 0);
-    color: blueviolet;
+    color: #ffba00;
+    font-weight: bold;
 }
 
 .botones:active {
@@ -88,13 +89,24 @@ div:hover {
 
 .cinco table {
     margin: 2px auto;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
+}
+
+.cinco li{
+    list-style-type:none;
+/*    font-size: 75%;*/
+    padding: 5px;
+    float: center;
 }
 
 .cinco td{
     font-size: 75%;
     padding: 5px;
+    float: center;
+}
 
+#limites {
+    font-size:smaller;
 }
 
 .cinco:hover {
