@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.comidas" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Comidas</name>
+    <description>
+        Sugerencias de comidas y planning semanal.
+    </description>
+    <author email="cursofactor@gmail.com" href="https://pilgrim.neocities.org/comidas/www/index.html">
+        Luis Gentil
+    </author>
+
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <platform name="android">    
+      <icon src="icon.png" />
+      <icon src="icon.png"   gap:platform="android"    gap:qualifier="ldpi" />
+      <icon src="icon.png"   gap:platform="android"    gap:qualifier="mdpi" />
+      <icon src="icon.png"   gap:platform="android"    gap:qualifier="hdpi" />
+      <icon src="icon.png"   gap:platform="android"    gap:qualifier="xhdpi" />
+    </platform>
+
+    <content src="index.html" />
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+
+</widget>

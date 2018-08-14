@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pruebas de Comidas</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+<script type = "text/javascript" src = "js/comidas.js"></script>
+<script type="text/javascript" src="js/meals.js" ></script>
+<script type = "text/javascript" src = "resources/datos.js"></script>
+</head>
+
+<body onload="PlanningSemanal(datos)">
+Tu lista se actualiza cada sábado a las 00:00 horas. <br>
+Nº de segundos desde última actualización:
+<div id="textos">texto aquí</div>
+Fecha último planning: 
+<div id="texto2">texto aquí</div>
+Tu base de datos tiene ·<span id="todo"></span>· platos, entre los que se eligen los de cada semana. <br>
+
+<p id = "hoy">-</p>
+<button onclick="generarPlanning()">Generar again</button>
+<button onclick="pintarTest()">pintar</button>
+<br>
+
+Además, se han establecido unos límites para equilibrar los tipos de platos. Estos son los límites semanales:<br>
+<ul id="limits"></ul>
+
+No se repiten los de la semana pasada, que fueron:
+<p id ="semana_ant"></p>
+<h2> aleatorio + condiciones (límites máximos)</h2>
+
+Planning para esta semana:<p id="listado"></p>
+<p id="plato1"></p>
+<p id="plato2"></p>
+<p id="plato3"></p>
+
+Este planning tiene los siguientes tipos de platos: 
+<ul id = "L_primeros"></ul>
+
+</body>
+</html>
+
+
