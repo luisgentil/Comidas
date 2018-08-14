@@ -271,7 +271,7 @@ function PlanningSemanal(datos) {
 	//	document.getElementById('hoy').innerHTML = generarPropuesta('segundo').nombre;
 		pintarPrimeros('plato1');
 		pintarSegundos('plato2');
-		pintarCenas('plato3');
+		pintarCenas('Box5');
 		pintarTextosInicio();
 		pintarSemanaAnterior();
 		pintarLimites();
@@ -285,17 +285,17 @@ function PlanningSemanal(datos) {
 
 	function pintarPrimeros(contenedor){
 		for (i=0; i < 7; i++){
-			document.getElementById(contenedor).innerHTML += '<td>'+ localStorage.getItem("dia" + i + "plato1") ;}
+			document.getElementById(contenedor).innerHTML += '<li>'+ localStorage.getItem("dia" + i + "plato1") +'</li>';}
 		}
 
 	function pintarSegundos(contenedor){
 		for (i=0; i < 7; i++){
-			document.getElementById(contenedor).innerHTML += '<td>'+localStorage.getItem("dia" + i + "plato2");}
+			document.getElementById(contenedor).innerHTML += '<li>'+localStorage.getItem("dia" + i + "plato2")+'</li>';}
 		}
 
 	function pintarCenas(contenedor){
 		for (i=0; i < 7; i++){
-			document.getElementById(contenedor).innerHTML += '<td>'+localStorage.getItem("dia" + i + "plato3") ;}
+			document.getElementById(contenedor).innerHTML += '<li>'+localStorage.getItem("dia" + i + "plato3")+'</li>' ;}
 		}
 
 
@@ -347,7 +347,7 @@ function PlanningSemanal(datos) {
 		pintarSegundos('plato2');
 		pintarCenas('plato3');
 		pintarContadores();
-		console.log("falta pintar contadores");
+		console.log("falta pintar limites");
 	}
 
 	function compartir(){		// PENDIENTE
