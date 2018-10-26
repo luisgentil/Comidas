@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.comidas" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.comidas" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Comidas</name>
     <description>
-        Sugerencias de comidas y planning semanal.
+        ¿Qué comemos hoy? Sugerencias de comidas y cenas, con un planning semanal.
     </description>
     <author email="cursofactor@gmail.com" href="https://pilgrim.neocities.org/comidas/www/index.html">
         Luis Gentil

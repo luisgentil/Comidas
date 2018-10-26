@@ -53,10 +53,13 @@ function PlanningSemanal(datos) {
 	*/
 
 		// variables necesarias			
+		// var limites == limites MAXIMOS
+	var limites = {"verdura": 4, "arroz": 3, "patata": 3, "pasta": 3, "legumbre": 3, "carne_roja": 2, "carne_blanca": 3, "pescado": 3, "huevo": 3, "pan": 2, "pescado_azul": 2, "pescado_blanco": 2, "fritura": 2, "precocinado": 3, "chacina": 2,'nombre':25, 'invierno': 25, 'primavera':25, 'verano': 25, 'otoño': 25,'primero': 25, 'segundo':25, 'cena':25};
+// OJO: var limites tambien se define en la función function pintarContadores() 
 
-	var limites = {"verdura": 5, "arroz": 3, "patata": 3, "pasta": 3, "legumbre": 3, "carne_roja": 2, "carne_blanca": 3, "pescado": 5, "huevo": 3, "pan": 2, "pescado_azul": 3, "pescado_blanco": 3, "fritura": 2, "precocinado": 3, "chacina": 2,'nombre':25, 'invierno': 25, 'primavera':25, 'verano': 25, 'otoño': 25,'primero': 25, 'segundo':25, 'cena':25};
-
-	//- CICLO PRINCIPAL 										
+		// var minimos == límites MINIMOS para primer plato
+	var minimos = {"verdura": 2, "arroz": 1, "patata": 1, "pasta": 1, "legumbre": 2};
+	//- CICLO PRINCIPAL =====================================================
 
 	if (!localStorage.fecha_ultimo_plan) {
 		localStorage.platos_sem_ant = ['esta es la primera vez que generas el planning :)']
@@ -72,10 +75,10 @@ function PlanningSemanal(datos) {
 		//	document.getElementById('textos').innerHTML = "nueva ejecución";
 			generarPlanningSemanal(datos);}
 		else {
-			console.log( localStorage.fecha_proximo_plan);}
+			console.log("próximo plan: " + localStorage.fecha_proximo_plan);}
 		}
 	pintarPlanning();
-	 // fin del ciclo PRINCIPAL - while											
+	 // fin del ciclo PRINCIPAL - while	======================================
 
 	function generarPlanningSemanal(datos) {
 	//	console.log(localStorage.platos_sem_ant);
@@ -347,7 +350,7 @@ function PlanningSemanal(datos) {
 		pintarSegundos('plato2');
 		pintarCenas('plato3');
 		pintarContadores();
-		console.log("falta pintar limites");
+		console.log("falta pintar objetivosl");
 	}
 
 	function compartir(){		// PENDIENTE
@@ -367,7 +370,7 @@ function generarPlanning() {
 	}
 
 function pintarContadores() {
-	var limites = {"verdura": 5, "arroz": 3, "patata": 3, "pasta": 3, "legumbre": 3, "carne_roja": 2, "carne_blanca": 3, "pescado": 5, "huevo": 3, "pan": 2, "pescado_azul": 3, "pescado_blanco": 3, "fritura": 2, "precocinado": 3, "chacina": 2,'nombre':25, 'invierno': 25, 'primavera':25, 'verano': 25, 'otoño': 25,'primero': 25, 'segundo':25, 'cena':25};
+	var limites = {"verdura": 4, "arroz": 3, "patata": 3, "pasta": 3, "legumbre": 3, "carne_roja": 2, "carne_blanca": 3, "pescado": 3, "huevo": 3, "pan": 2, "pescado_azul": 2, "pescado_blanco": 2, "fritura": 2, "precocinado": 3, "chacina": 2,'nombre':25, 'invierno': 25, 'primavera':25, 'verano': 25, 'otoño': 25,'primero': 25, 'segundo':25, 'cena':25};
 	seleccion_limites = ["verdura", "arroz", "patata", "pasta", "legumbre", "carne_roja", "carne_blanca", "pescado", "huevo", "pan", "pescado_azul", "pescado_blanco", "fritura", "precocinado", "chacina"];
 
 	for (i in limites){
